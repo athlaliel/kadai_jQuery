@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery</title>
+    <style>
+        #chgEle, #retEle {
+            width: 100px;
+            height: 30px;
+            background: #009966;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.4); 
+            cursor: pointer;
+        }
+        #chgEle:active, #retEle:active {
+            margin-top: 2px;
+            margin-left: 2px; 
+            box-shadow: none;
+        }
+        #retEle {
+            background: #afafaf;
+        }
+    </style>
+</head>
+<body>
+    <div id="content_wrap">
+        <section>
+            <h1>お試しjQuery</h1>
+            <p>↓を押すと背景と文字色が変わります。</p>
+            <div id="chgEle">Click Here</div>
+            <p>↓を押すと背景と文字色が戻ります。</p>
+            <div id="retEle">Return</div>
+        </section>
+    </div>
+</body>
+<!-- ここの下にjsファイルを読み込む処理を記述する --> 
+<script type="text/javascript"src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript"src="js/basic.js"></script>
+</html>

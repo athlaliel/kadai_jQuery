@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>値を表示</title>
+    <style>
+        .display-radio {
+            margin: 10px;
+        }
+        #display-value {
+            font-size: 400px;
+            color: #c20067;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content_wrap">
+        <section class="section">
+            <h1>値を表示</h1>
+            <p>ラジオボタンを選択すると、値が表示されます。</p>
+            <input type="radio" name="display-radio" class="display-radio" id="display-yes" value="YES" checked>YES
+            <input type="radio" name="display-radio" class="display-radio" id="display-no" value="NO">NO
+            <div id="display-value"></div>
+        </section>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/chg_radiobtn.js"></script>
+</html>
